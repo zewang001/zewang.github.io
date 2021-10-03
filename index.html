@@ -14,6 +14,22 @@
             .boldText{
                 font-weight: bold;
             }
+            .grid1 {
+                margin: 5px;
+                padding: 5px;
+                display:grid;
+                grid-column-gap: 0ch;
+                grid-row-gap: 1px;
+                grid-template-columns: 800px auto;
+                border:0px transparent;
+            }
+            .grid-item1{
+                margin: 5px;
+                padding: 5px;
+                background-color: white;
+                border:0px transparent;
+                text-align: left;
+            }
             .grid {
                 margin: 5px;
                 padding: 5px;
@@ -30,12 +46,37 @@
                 border:0px transparent;
             }
 
+            a#pdf{
+                display: block; 
+                float:left; 
+                background: #666; 
+                color: white; 
+                padding: 6px 50px 6px 12px; 
+                margin-bottom: 6px; 
+                text-decoration: none; 
+                text-align: center;  
+            }
+            a#pdf:hover{ 
+                background: #222; 
+            }
+
+
         </style>
     </head>
     <body>
         <div>
-            <h1 style="color: cornflowerblue;">Ze WANG</h1>
-            <H3 style="color: black;">IT System Analyst</H3>
+            <div class="grid1">
+                <div class="grid-item1">
+                    <h1 style="color: cornflowerblue;">Ze WANG</h1>
+                    <h3 style="color: black;">IT System Analyst</h3>        
+                </div>
+                <div class="grid-item1">
+                    <h4><a id="pdf" href="#">Download PDF</a></h4> <br>
+                    <h4><a href="mailto:ze.wang2000@outlook.com">ze.wang2000@outlook.com</a></h4>
+                    <h4>+352 621 547 549</h4>        
+                </div>
+            </div>
+
             <p>Innovative, highly motivated and problem-oriented IT professional. A team player in multicultural environment where I had the opportunity 
                 to apply my skills in multiple roles such as project leader, analyst and functional developer. During this time I have focused on new technologies 
                 including data-centric design principles. My greatest strengths are the ability to learn fast and to work independently, while 
@@ -47,19 +88,28 @@
                     <td>
                         <div>
                             <h3>Language</h3>
-                            <span class="boldText">English: </span><span>Fluent</span> <br>
-                            <span class="boldText">Chinese: </span><span>Native</span> <br>
-                            <span class="boldText">French: </span><span>Basic</span> <br>
-                            <br>
+                            <p><span class="boldText">English: </span><span>Fluent</span></p>
+                            <p><span class="boldText">Chinese: </span><span>Native</span></p>
+                            <p><span class="boldText">French: </span><span>Basic</span></p>
+                            <p>  </p>
                         </div>
                     </td>
                     <td>
                         <div>
                             <h3>Skills</h3>
-                            <span class="boldText">Data Science: </span><span>Python, Keras, Librosa, Mrcrosoft Python SDK, Excel VBA</span> <br>
-                            <span class="boldText">Web development: </span><span>HTML, CSS, JavaScript, UML</span> <br>
-                            <span class="boldText">Database: </span><span>SQL, PL/SQL, Oracal, MySQL, Informix</span> <br>
-                            <span class="boldText">Operation System: </span><span>UNIX, HPC, C Shell</span> <br>                           
+                            <p><span>Data Science: </span><span class="boldText">Python, Keras, Librosa, Mrcrosoft Python SDK, Excel VBA</span></p>
+                            <p><span>Web development: </span><span class="boldText">HTML, CSS, JavaScript, UML</span></p>
+                            <p><span>Database: </span><span class="boldText">SQL, PL/SQL, Oracal, MySQL, Informix</span></p>
+                            <p><span>Operation System: </span><span class="boldText">UNIX, HPC, C Shell</span></p>                           
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <h3>Certificated</h3>
+                            <p class="boldText">Microsoft Azure Data Scientist Associate</p>
+                            <p class="boldText">Microsoft Azure Data Fundamentals</p>
+                            <p class="boldText">Microsoft Azure AI fundamentals</p>
+                            <p class="boldText">MITx CTL.SC0x: Supply Chain Analytics</p>
                         </div>
                     </td>
                 </tr>
@@ -137,8 +187,8 @@
                         <ul>
                             <li>IFRS - ICBC Aisa, Hong Kong</li>
                             <li>IFRS - Bank Mandiri, Jakarta</li>    
-                            <li>IFRS – GE Money, Prague</li>
-                            <li>ALM – CBI, Dubai</li>
+                            <li>IFRS - GE Money, Prague</li>
+                            <li>ALM - CBI, Dubai</li>
                         </ul>
                     </p>
                 </div>
